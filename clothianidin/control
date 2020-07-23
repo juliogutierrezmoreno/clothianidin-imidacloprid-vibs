@@ -1,0 +1,109 @@
+$title
+$operating system unix
+$symmetry c1
+$redundant    file=coord
+$coord    file=coord
+$user-defined bonds    file=coord
+$atoms
+cl 1                                                                           \
+   basis =cl def-TZVPP
+s  2                                                                           \
+   basis =s def-TZVPP
+o  3-4                                                                         \
+   basis =o def-TZVPP
+n  5-9                                                                         \
+   basis =n def-TZVPP
+c  10-15                                                                       \
+   basis =c def-TZVPP
+h  16-23                                                                       \
+   basis =h def-TZVPP
+$basis    file=basis
+$rundimensions
+   dim(fock,dens)=227568
+   natoms=23
+   nshell=217
+   nbf(CAO)=672
+   nbf(AO)=589
+   dim(trafo[SAO<-->AO/CAO])=838
+   rhfshells=1
+$scfmo   file=mos
+$closed shells
+ a       1-64                                   ( 2 )
+$scfiterlimit      200
+$thize     0.10000000E-04
+$thime        5
+$scfdump
+$scfintunit
+ unit=30       size=0        file=twoint
+$scfdiis
+$scforbitalshift  automatic=.1
+$drvopt
+   cartesian  on
+   basis      off
+   global     off
+   hessian    on
+   dipole     on
+   nuclear polarizability
+$interconversion  off
+   qconv=1.d-7
+   maxiter=25
+$optimize
+   internal   on
+   redundant  on
+   cartesian  off
+   global     off
+   basis      off   logarithm
+$coordinateupdate
+   dqmax=0.3
+   interpolate  on
+   statistics    5
+$forceupdate
+   ahlrichs numgeo=15  mingeo=3 maxgeo=4 modus=<g|dq> dynamic fail=0.3
+   threig=0.005  reseig=0.005  thrbig=3.0  scale=1.00  damping=0.0
+$forceinit off
+   diag=default
+$energy    file=energy
+$grad    file=gradient
+$forceapprox    file=forceapprox
+$lock off
+$dft
+   functional b3-lyp
+   gridsize   m3
+$scfconv   6
+$scfdamp   start=0.700  step=0.050  min=0.050
+$disp3
+$last step     force
+$statistics  off parallel
+$2e-ints_shell_statistics    file=metastase
+$last SCF energy change = -.15139171E-05
+$charge from dscf
+          0.000 (not to be modified here)
+$dipole from force
+  x    -0.65708749776258    y     0.67906006324410    z     0.48464617883933    a.u.
+   | dipole | =    2.6992647622  debye
+$2e-ints'_shell_statistics
+  file=metastase
+$maximum norm of cartesian gradient = 0.29146022E-03
+$maximum norm of internal gradient = 0.40260794E-03
+$orbital_max_rnorm 0.43823934181381E-03
+$dipgrad    file=dipgrad
+$hessian (projected)    file=hessian
+$vibrational normal modes       file=vib_normal_modes
+$vibrational reduced masses
+  11.4734581736  14.2952474007   8.6631058871  12.0991208303  13.4000255966
+   6.0573651650  14.9757734195   7.1411086484   7.5208627306   7.8161561941
+   4.7027215385   6.2098711350   1.3140732258   7.4076656737   4.6461997485
+   4.1691370243   4.0429923986   6.3818722065   7.1722327299   3.2139319695
+   7.7543302513   7.0295806181   6.8968434573   5.1852849602   1.1903485885
+   1.5132244537   2.9814799247   5.4063205780   8.6093172981   4.8287427902
+   4.2104007790   7.1508959023   7.4679333170  12.3212957294   7.7929141221
+   3.6278045520   1.5309406499   2.3763314265  10.2207686700   6.4716172276
+   3.0896809271   4.6141106667   1.3825303536   1.5627962613   5.0684971056
+   2.2811409494   3.1467293919   1.5980300018   1.5082498058   4.4811042140
+   1.3462991461   1.6634853904   1.1677382963   9.4226202745   1.0862719330
+   1.0862909467   1.0428128754   1.7680242506   5.8165968832   3.9009669714
+   6.9552167110   1.0432208367   1.1017057707   1.0613249887   1.0909011864
+   1.1035573886   1.0939749726   1.0774420579   1.0776560032
+$nvibro       69
+$vibrational spectrum       file=vibspectrum
+$end

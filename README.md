@@ -3,8 +3,8 @@ Spectral Assignment of Clothianidin and Imidacloprid
 
 Highly Sensitive SERS Detection of Neonicotinoid Pesticides.
 Complete Raman Spectral Assignment of Clothianidin and Imidacloprid.
-by Niamh Creedon, Pierre Lovera, Julio Gutierrez Moreno, Michael Nolan and Alan O’Riordan1
-at Tyndall National Institute, University College Cork, Ireland
+Niamh Creedon, Pierre Lovera, Julio Gutierrez Moreno, Michael Nolan and Alan O’Riordan.
+Tyndall National Institute, University College Cork, Ireland.
 
 Density functional theory (DFT) calculations were undertaken to find the equilibrium molecular
 structures and aid the assignment of the Raman modes of the isolated imidacloprid and clothianidin
